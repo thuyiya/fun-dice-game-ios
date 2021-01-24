@@ -8,13 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var imageViewDice1: UIImageView!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("HEllo Nibm development")
+       
     }
-
-
+    
+    @IBAction func actionRoll(_ sender: UIButton) {
+        
+        imageViewDice1.image = #imageLiteral(resourceName: "dicefive")
+    }
 }
 
